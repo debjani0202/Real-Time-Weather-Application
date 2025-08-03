@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-left">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+        Real Time Weather
+      </div>
+    </div>
+
+    <div class="nav-center">
+      <div class="search-container">
+        <input type="text" id="city-input" placeholder="Enter city name..." />
+        <button id="search-btn">
+          <img src="search.png" alt="Search" />
+        </button>
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <ul class="nav-link">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Forecast</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Past 5 Days</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="weather-city">
+    <div id="city-heading">Kolkata</div>
+     <img id="weather-icon" alt="weather icon" class="weather-img" />
+
+    <div id="condition">Sunny</div>
+  </div>
+
+  <div class="boxes">
+    <div id="temperature" class="mybox">
+      <div class="head">Temperature</div>
+    </div>
+    <div id="wind" class="mybox">
+      <div class="head">Wind</div>
+    </div>
+    <div id="humidity" class="mybox">
+      <div class="head">Humidity</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
